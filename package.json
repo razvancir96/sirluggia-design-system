@@ -1,0 +1,19 @@
+{
+  "name": "sirluggia-design-system",
+  "version": "1.0.0",
+  "description": "Beautiful, themeable, accessible UI elements, written in React, TypeScript and Styled Components",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razvancir96/sirluggia-design-system.git"
+  },
+  "keywords": [
+    "design-system"
+  ],
+  "author": "razvancir96",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/razvancir96/sirluggia-design-system/issues"
+  },
+  "homepage": "https://github.com/razvancir96/sirluggia-design-system#readme"
+}
