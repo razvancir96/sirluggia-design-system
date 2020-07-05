@@ -1,11 +1,11 @@
-import * as React from 'react'
+import * as React from 'react';
 
-function App() {
-    return (
-        <div>
-            <h1>Sirluggia Design System</h1>
-        </div>
-    )
+function App(): JSX.Element {
+  return (
+    <div>
+      <h1>Sirluggia Design System</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
