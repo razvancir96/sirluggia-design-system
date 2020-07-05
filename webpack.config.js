@@ -2,22 +2,31 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 var path = require("path");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "index_bundle.js",
   },
+  devtool: "source-map",
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
+        use: [
+          {
+            loader: "ts-loader",
+          },
+        ],
+      },
+      // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader",
       },
     ],
   },
@@ -25,5 +34,5 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/public/index.html",
     }),
-  ],
+  ]
 };
