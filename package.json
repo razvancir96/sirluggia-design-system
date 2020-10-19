@@ -7,6 +7,8 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --build --watch",
     "lint": "./node_modules/.bin/eslint --ext .js,.ts,.jsx,.tsx  --fix",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "storybook": "start-storybook -p 6006",

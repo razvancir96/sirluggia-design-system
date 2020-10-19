@@ -4,12 +4,15 @@
         "composite": true,
         "declaration": true,
         "outDir": "dist",
-        "rootDir": "src"
+        "rootDir": "src",
     },
     "include": [
         "src"
     ],
     "exclude": [
-        "src/*.stories.tsx"
-    ]
+        "*.stories.tsx"
+    ],
+    "references": [{
+        "path": "../Button"
+    }]
 }

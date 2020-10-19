@@ -1,0 +1,19 @@
+{
+  "name": "@sirluggia/modal",
+  "version": "1.0.0",
+  "author": "razvancir96",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@sirluggia/button": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "styled-components": ">=4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
