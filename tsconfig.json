@@ -1,13 +1,8 @@
 {
-	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
-		"lib": [
-			"ESNext"
-		],
-		"noImplicitAny": true,
-		"moduleResolution": "node",
-		"esModuleInterop": true,
-		"jsx": "react"
-	}
+    "files": [],
+    "include": [],
+    "references": [
+        {"path": "./packages/Button"},
+        {"path": "./packages/Modal"}
+    ]
 }
